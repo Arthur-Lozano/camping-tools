@@ -1,3 +1,5 @@
+# https://trello.com/b/nhf603YC/user-stories
+# https://app.creately.com/diagram/P5zd3dqXZgC/edit
 # camping-tools
 - Arthur Lozano
 - Anthony Ochoa
