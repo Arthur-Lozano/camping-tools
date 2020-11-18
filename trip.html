@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 
-<header>
-<nav id="aboutUs"> About Us</nav>
-<nav id="campinglist"> Camping List</nav>
-<nav id="home"> Home </nav>
+<html>
 
-</header>
-<body></body>
+<head>
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Trip Selection</title>
+</head>
+
+<body>
+  <header>
+    <nav id="aboutUs"> About Us</nav>
+    <nav id="campinglist"> Camping List</nav>
+    <nav id="home"> Home </nav>
+  </header>
+
+  <main>
+    <label for="name">Hi, what is your name?</label>
+    <input type="text" id="name" name="name">
+    <label for="campingList">Choose Your Camping Type:</label>
+    <select name="types" id="campingTypes">
+      <option value="car">Vehicle</option>
+      <option value="backpack">Backpacking</option>
+      <option value="cabin"> Cabin </option>
+    </select>
+
+    <input type="submit" value="Submit">
+</main>
+
+
+</body>
 <footer></footer>
+
+</html>
