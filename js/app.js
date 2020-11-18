@@ -20,20 +20,20 @@ function neededTools() {
     itemsBackpacking.pop();//could pop each array since only one will displayed
     itemsCabin.pop();
     itemsVehicle.pop();
-  } else {
-
-  //List item
-  function renderResults() {
-    for (var i = 0; i < variety.length; i++) {
-      // create element
-      var li = document.createElement('li');
-      // give it content
-      li.textContent = `${User.name} check out these camping tools! ${Trip.neededTools}`;
-      // append it to the dom
-      hoobsList.appendChild(li);
-    }
+  } else { }
+}
+//List item
+function renderResults() {
+  for (var i = 0; i < variety.length; i++) {
+    // create element
+    var li = document.createElement('li');
+    // give it content
+    li.textContent = `${User.name} check out these camping tools! ${Trip.neededTools}`;
+    // append it to the dom
+    hoobsList.appendChild(li);
   }
 }
+
 
 
 document.body.onload = addElement;
@@ -56,3 +56,5 @@ function handleClick(event) {
   var clickedButton = event.target.items;// when button is clicked needed items are displayed
   neededTools();
 }
+
+//Fixing code
