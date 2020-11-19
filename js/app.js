@@ -1,60 +1,63 @@
 'use strict';
 
-var itemsBackpacking = ['Sleeping bag', 'Flash light', 'Camping light', 'Axe', 'Medical kit', 'Grill', 'Water source', 'Food source', 'Tarp', 'Pack'];
-var itemsVehicle = ['Sleeping bag', 'Flash light', 'Camping light', 'Axe', 'Medical kit', 'Grill', 'Water source', 'Food source', 'Tarp', 'Pack'];
-var itemsCabin = ['Sleeping bag', 'Flash light', 'Camping light', 'Axe', 'Medical kit', 'Grill', 'Water source', 'Food source', 'Tarp', 'Pack'];
-var notNeeded = [];
 
-function User(name) {
-  this.name = name;
+var myForm = document.getElementById('campTime');
+var campingItems = [];
+var parentElement = document.getElementById('theList');
+
+
+//Constructor function
+function Camping(itemOne, itemTwo, itemThree, itemFour) {
+  this.itemOne = itemOne;
+  this.itemTwo = itemTwo;
+  this.itemThree = itemThree;
+  this.itemFour = itemFour;
 }
 
-function Trip(backpacking, vehicle, cabin) {
-  this.trip = backpacking;
-  this.vehicle = vehicle;
-  this.cabin = cabin;
-}
+Camping.prototype.render = function () { // runs/generates a row for each object instantiated
+  var ol = document.createElement('OL');
+  ol.textContent = this.itemOne;
+  parentElement.appendChild(ol);
+  ol = document.createElement('li');
+  ol.textContent = this.itemTwo;
+  parentElement.appendChild(ol);
+  ol = document.createElement('li');
+  ol.textContent = this.itemThree;
+  parentElement.appendChild(ol);
+  ol = document.createElement('li');
+  ol.textContent = this.itemFour;
+  parentElement.appendChild(ol);
+};
 
-function neededTools() {
-  if (notNeeded === itemsBackpacking && itemsCabin && itemsVehicle) {
-    itemsBackpacking.pop();//could pop each array since only one will displayed
-    itemsCabin.pop();
-    itemsVehicle.pop();
-  } else { }
-}
-//List item
-function renderResults() {
-  for (var i = 0; i < variety.length; i++) {
-    // create element
-    var li = document.createElement('li');
-    // give it content
-    li.textContent = `${User.name} check out these camping tools! ${Trip.neededTools}`;
-    // append it to the dom
-    hoobsList.appendChild(li);
+// render everything
+function renderAll() {
+  console.log(campingItems);
+  for (var i = 0; i < campingItems.length; i++) {
+    campingItems[i].render();
   }
 }
 
+// Below is the event handler
+myForm.addEventListener('submit', formSubmit);
+function formSubmit(event) {
+  event.preventDefault();
+  var form = event.target;
+  var itemOne = form.itemOne.value;
+  var itemTwo = form.itemTwo.value;
+  var itemThree = form.itemThree.value;
+  var itemFour = form.itemFour.value;
 
-
-document.body.onload = addElement;
-Trip.prototype.render = function () {
-  // create a new div element 
-  const newDiv = document.createElement("div");
-  // and give it some content 
-  const newContent = document.createTextNode("Welcome!  Below are your recommended camping items.");
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);
-  // add the newly created element and its content into the DOM 
-  const currentDiv = document.getElementById("campingTools");
-  document.body.insertBefore(newDiv, currentDiv);
+  campingItems.push(new Camping(itemOne, itemTwo, itemThree, itemFour));
+  parentElement.innerHTML = '';
+  renderAll();
 }
+renderAll();
 
 
-// Submit button for name and mode of camping
 
-function handleClick(event) {
-  var clickedButton = event.target.items;// when button is clicked needed items are displayed
-  neededTools();
-}
 
-//Fixing code
+
+
+
+
+
