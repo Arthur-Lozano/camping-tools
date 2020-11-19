@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="stylesheet" href="css/reset.css">
   <title>Items Page</title>
 </head>
-
 <body>
   <header>
     <nav id="aboutUs"> About Us</nav>
@@ -14,6 +12,26 @@
   </header>
   <main>
     <section>
+    <form id="campTime">
+      <fieldset>
+        <legend>Tell us what camping gear you have</legend><br>
+        <label for="itemOne">Item 1</label>
+        <input  name= "itemOne" type="text" required="required">
+        <label for="itemTwo">Item 2</label>
+        <input name= "itemTwo" type="text" required="required">
+        <label for="itemThree">Item 3</label>
+        <input name= "itemThree" type="text" required="required">
+        <label for="itemFour">Item 4</label>
+        <input name="itemFour" type="text" required="required">
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+    <ol id="theList"> 
+    </ol>
+  </main>
+<script src="js/app.js"></script>
+<footer></footer>
       <form id="campTime">
         <fieldset>
           <legend>Tell us what camping gear you have</legend><br>
@@ -34,5 +52,4 @@
   </main>
   <script src="js/app.js"></script>
   <footer></footer>
-
 </html>

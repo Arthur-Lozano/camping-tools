@@ -1,0 +1,97 @@
+body {
+  background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2019/2-forest.jpg");
+ }
+
+
+
+h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 125px;
+  margin: 5px 5px 5px 5px;
+}
+
+header nav {
+  margin: auto;
+  width: 960px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Staatliches', cursive;
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+#ryanT {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+}
+
+#anthonyO{
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+}
+
+#arthurL {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+}
+
+#cordellA {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+}
+
+
