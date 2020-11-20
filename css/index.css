@@ -1,11 +1,12 @@
 /* Main Background */
 body {
-  background-color: black;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(15, 15, 15) 35%, rgb(25, 25, 25) 100%);
 }
 
 /* Title Text */
 h1 {
-  color: whitesmoke;
+  color: rgb(252, 246, 243);
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin: 5px 5px 5px 5px;
@@ -14,14 +15,14 @@ h1 {
 
 /* Sub-Text */
 h4 {
-  color: whitesmoke;
+  color: rgb(252, 246, 243);
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin: 5px 5px 5px 5px;
   font-size: 22px;
 }
 
-/* Home Page Button */
+/* Home Page Button Edited from CodePen DL */
 body{
   font-family: 'Amatic SC', cursive;
   margin:0;
@@ -45,7 +46,7 @@ body{
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: rgb(252, 246, 243);
  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
  /* box-shadow: 0 0 7px #eee; */
   border-radius: 10px;
@@ -60,7 +61,7 @@ body{
   background-image: linear-gradient(to right, #3f5e42 0%, #468b4c 51%, #ec993b 100%);
 }
 
-/* Mountain Animation */
+/* Mountain Background Animation - Edited from CodePen DL */
 :root {
   --grey1: #53697a;
   --grey2: #4b5b66;

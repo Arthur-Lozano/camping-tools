@@ -1,0 +1,199 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(15, 15, 15) 35%, rgb(25, 25, 25) 100%);
+}
+
+
+/* Main Headline */
+h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 125px;
+  margin: 5px 5px 15px 5px;
+  color: rgb(252, 246, 243);
+}
+
+/* Nav Bar */
+header nav {
+  margin: auto;
+  width: 500px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 37px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  display: inline-block;
+  font-size: 23px;
+  color: rgb(252, 246, 243);
+}
+
+nav a:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+}
+
+/* Ryan's Spot */
+.contentR {
+  padding: 20px;
+  overflow: hidden;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 30px;
+  padding: 40px 40px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(43, 42, 42, 0.15);
+  font-family: 'Staatliches', cursive;
+}
+
+.contentR img {
+  margin-right: 15px;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.contentR h2{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 10px 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+.contentR p{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+/* Anthony's Spot */
+.contentA {
+  padding: 20px;
+  overflow: hidden;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 30px;
+  padding: 40px 40px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(43, 42, 42, 0.15);
+  font-family: 'Staatliches', cursive;
+}
+
+.contentA img {
+  margin-right: 15px;
+  float: right;
+  width: 25%;
+  height: 25%;
+}
+
+.contentA h2{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 10px 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+.contentA p{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+/* Arthur's Spot */
+.contentAr {
+  padding: 20px;
+  overflow: hidden;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 30px;
+  padding: 40px 40px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(43, 42, 42, 0.15);
+  font-family: 'Staatliches', cursive;
+}
+
+.contentAr img {
+  margin-right: 15px;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.contentAr h2{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 10px 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+.contentAr p{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+/* Cordell's Spot */
+.contentC {
+  padding: 20px;
+  overflow: hidden;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 30px;
+  padding: 40px 40px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(43, 42, 42, 0.15);
+  font-family: 'Staatliches', cursive;
+}
+
+.contentC img {
+  margin-right: 15px;
+  float: right;
+  width: 25%;
+  height: 25%;
+}
+
+.contentC h2{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 10px 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+.contentC p{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+  color: rgb(252, 246, 243);
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}

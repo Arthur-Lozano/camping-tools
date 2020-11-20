@@ -1,37 +1,62 @@
+/* Forest Background Img */
 body {
   background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2019/2-forest.jpg");
  }
 
 
-
+/* Main Headline */
 h1 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 125px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 5px 15px 5px;
 }
 
+/* Nav Bar */
 header nav {
   margin: auto;
-  width: 960px;
+  width: 500px;
 }
 
 header li {
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 37px;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Amatic SC', cursive;
   display: inline-block;
+  font-size: 23px;
 }
 
+nav a:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+}
+
+/* Dev Team Names + Bios */
 h2 {
   display: inline-block;
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+h5:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 p {
@@ -40,12 +65,11 @@ p {
 
 #ryanT {
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 45px;
   margin-left: 30px;
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
@@ -59,7 +83,6 @@ p {
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
@@ -73,7 +96,6 @@ p {
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
@@ -87,7 +109,6 @@ p {
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
