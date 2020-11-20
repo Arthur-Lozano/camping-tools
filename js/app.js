@@ -1,9 +1,10 @@
 'use strict';
 
-
+var recItems = [];
 var myForm = document.getElementById('campTime');
-var campingItems = [];
 var parentElement = document.getElementById('theList');
+var campingProducts = [];
+var userData = localStorage.getItem('userResults');
 
 
 //Constructor function
@@ -12,28 +13,33 @@ function Camping(itemOne, itemTwo, itemThree, itemFour) {
   this.itemTwo = itemTwo;
   this.itemThree = itemThree;
   this.itemFour = itemFour;
+  campingProducts.push(this);
 }
 
-Camping.prototype.render = function () { // runs/generates a row for each object instantiated
-  var ol = document.createElement('OL');
-  ol.textContent = this.itemOne;
-  parentElement.appendChild(ol);
-  ol = document.createElement('li');
-  ol.textContent = this.itemTwo;
-  parentElement.appendChild(ol);
-  ol = document.createElement('li');
-  ol.textContent = this.itemThree;
-  parentElement.appendChild(ol);
-  ol = document.createElement('li');
-  ol.textContent = this.itemFour;
-  parentElement.appendChild(ol);
+Camping.prototype.render = function () { // generates a new list item for each item entered into text field
+  //key+name = arrayName
+  for (var i = 0; i < campingProducts.length; i++) {
+    var li = document.createElement('li');
+    li.textContent = campingProducts[i].itemOne;
+    parentElement.appendChild(li);
+    li = document.createElement('li');
+    li.textContent = campingProducts[i].itemTwo;
+    parentElement.appendChild(li);
+    li = document.createElement('li');
+    li.textContent = campingProducts[i].itemThree;
+    parentElement.appendChild(li);
+    li = document.createElement('li');
+    li.textContent = campingProducts[i].itemFour;
+    parentElement.appendChild(li);
+  }
 };
+
+
 
 // render everything
 function renderAll() {
-  console.log(campingItems);
-  for (var i = 0; i < campingItems.length; i++) {
-    campingItems[i].render();
+  for (var i = 0; i < campingProducts.length; i++) {
+    campingProducts[i].render();
   }
 }
 
@@ -47,11 +53,14 @@ function formSubmit(event) {
   var itemThree = form.itemThree.value;
   var itemFour = form.itemFour.value;
 
-  campingItems.push(new Camping(itemOne, itemTwo, itemThree, itemFour));
+  new Camping(itemOne, itemTwo, itemThree, itemFour);
   parentElement.innerHTML = '';
   renderAll();
+
+  var stringifiedArray = JSON.stringify(campingProducts);
+  localStorage.setItem('campingProducts', stringifiedArray);
 }
-renderAll();
+
 
 
 
