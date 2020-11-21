@@ -2,14 +2,28 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/reset.css">
-  <title>Campers Toolkit</title>
+  <link rel="stylesheet" href="css/item.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <title>Items Page</title>
 </head>
+
 <body>
-  <header>
-    <nav id="aboutUs"> About Us</nav>
-    <nav id="campinglist"> Camping List</nav>
-    <nav id="home"> Home </nav>
-  </header>
+  <!-- <audio autoplay loop>
+    <source src="audio/forest.wav" type="audio/wav">
+</audio> -->
+<h1>Camping List</h1>
+<header>
+  <nav>
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li> <a href="trip.html">Camper's Toolkit</a></li>
+      <li> <a href="about.html">About Us</a></li>
+      <li> <a href="spots.html">Camping Spots</a></li>
+    </ul>
+  </nav>
+</header>
+
   <main>
     <section>
     <form id="campTime">
@@ -23,6 +37,8 @@
         <input name= "itemThree" type="text" required="required">
         <label for="itemFour">Item 4</label>
         <input name="itemFour" type="text" required="required">
+        <br >
+        <input type="reset" value="reset">
       </fieldset>
       <button type="submit">Submit</button>
     </form>
@@ -30,6 +46,6 @@
     <ol id="theList"> 
     </ol>
   </main>
-  <script src="js/app.js"></script>
-  <footer></footer>
+<script src="js/app.js"></script>
+<footer></footer>
 </html>
