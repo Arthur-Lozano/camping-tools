@@ -34,8 +34,6 @@ Camping.prototype.render = function () { // generates a new list item for each i
   }
 };
 
-
-
 // render everything
 function renderAll() {
   for (var i = 0; i < campingProducts.length; i++) {
@@ -60,8 +58,6 @@ function formSubmit(event) {
   var stringifiedArray = JSON.stringify(campingProducts);
   localStorage.setItem('campingProducts', stringifiedArray);
 }
-
-
 
 
 
