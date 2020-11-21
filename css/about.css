@@ -2,8 +2,7 @@
 body {
   background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2019/2-forest.jpg");
  }
-
-
+ 
 /* Main Headline */
 h1 {
   text-align: center;
@@ -37,36 +36,81 @@ nav a:hover {
 }
 
 /* Dev Team Names + Bios */
+/* Names */
 h2 {
   display: inline-block;
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin-bottom: 10px;
+  margin-right: 25px;
 }
 
+/* Persons Spot Text */
 h5 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin-bottom: 10px;
   font-size: 18px;
-  text-decoration: none;
 }
 
-h5:hover {
+/* Ryans Spot */
+.linkR:hover {
   color: rgb(52, 214, 106);
   transition: 350ms;
   cursor: pointer;
-  text-decoration: none;
 }
 
+.linkR, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Anthonys Spot */
+.linkA:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.linkA, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Arthurs Spot */
+.linkAr:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.linkAr, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Cordells Spot */
+.linkC:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.linkC, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Bio Paragraph Text */
 p {
   font-size: 15px;
 }
 
+/* Ryans Bio */
 #ryanT {
   font-size: 50px;
   margin-top: 45px;
-  margin-left: 30px;
+  margin-left: 240px;
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
@@ -76,10 +120,11 @@ p {
   text-align: center;
 }
 
+/* Anthonys Bio */
 #anthonyO{
   font-size: 50px;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
@@ -89,10 +134,11 @@ p {
   text-align: center;
 }
 
+/* Arthurs Bio */
 #arthurL {
   font-size: 50px;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
   padding: 40px 80px;
   display: inline-block;
   border-radius: 5px;
@@ -102,17 +148,5 @@ p {
   text-align: center;
 }
 
-#cordellA {
-  font-size: 50px;
-  margin-top: 10px;
-  margin-left: 30px;
-  padding: 40px 80px;
-  display: inline-block;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  font-family: 'Staatliches', cursive;
-  text-align: center;
-}
 
 

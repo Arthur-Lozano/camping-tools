@@ -1,0 +1,41 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(15, 15, 15) 35%, rgb(25, 25, 25) 100%);
+}
+
+/* Main Headline */
+h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 125px;
+  margin: 5px 5px 15px 5px;
+  color: rgb(252, 246, 243);
+}
+
+/* Nav Bar */
+header nav {
+  margin: auto;
+  width: 500px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 37px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  display: inline-block;
+  font-size: 23px;
+  color: rgb(252, 246, 243);
+}
+
+nav a:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+}
+main {
+  color: white;
+}
