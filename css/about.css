@@ -42,7 +42,7 @@ h2 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin-bottom: 10px;
-  margin-right: 25px;
+  font-size: 57px;
 }
 
 /* Persons Spot Text */
@@ -85,18 +85,6 @@ h5 {
 }
 
 .linkAr, a:link, a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-/* Cordells Spot */
-.linkC:hover {
-  color: rgb(52, 214, 106);
-  transition: 350ms;
-  cursor: pointer;
-}
-
-.linkC, a:link, a:visited {
   text-decoration: none;
   color: black;
 }

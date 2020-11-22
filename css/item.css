@@ -1,6 +1,6 @@
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(15, 15, 15) 35%, rgb(25, 25, 25) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(20, 20, 20) 35%, rgb(37, 37, 37) 100%);
 }
 
 /* Main Headline */
@@ -8,8 +8,9 @@ h1 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 125px;
-  margin: 5px 5px 15px 5px;
+  margin: 0 0 15px 0;
   color: rgb(252, 246, 243);
+
 }
 
 /* Nav Bar */
@@ -37,5 +38,170 @@ nav a:hover {
   transition: 350ms;
 }
 main {
-  color: white;
+  color: rgb(252, 246, 243);
+}
+
+/* Form Title & SubText */
+#campTime {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+#formTitle {
+  font-size: 55px;
+}
+
+#nameTrip {
+  margin-top: 30px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Name & Trip Text */
+#subTitle1 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+/* Four Items Text */
+#subTitle2 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+/* Green Text - Name, Trip & Four */
+.green1 {
+  color: rgb(52, 214, 106);
+}
+.green2 {
+  color: rgb(52, 214, 106);
+}
+.green3 {
+  color: rgb(52, 214, 106);
+}
+
+/* Div Box */
+#formTitles {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+#camperNameText {
+  margin: 0 5px 0 0;
+  font-size: 15px;
+}
+#camperName {
+  margin-right: 15px;
+}
+
+#tripTypeText {
+  margin: 0 5px 0 0;
+  font-size: 15px;
+}
+
+#tripType {
+  margin-right: 15px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+/* Text Boxes Div Background */
+#textFields {
+  margin-top: 15px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Item Boxes */
+#item1text {
+  margin-right: 8px;
+}
+#item1 {
+  margin: 0 25px 0 0;
+}
+
+#item2text {
+  margin-right: 8px;
+}
+#item2 {
+  margin: 0 25px 0 0;
+}
+
+#item3text {
+  margin-right: 8px;
+}
+#item3 {
+  margin: 0 25px 0 0;
+}
+
+#item4text {
+  margin-right: 8px;
+}
+#item4 {
+  margin: 0 25px 0 0;
+}
+
+/* Submit Button to Results */
+body{
+  font-family: 'Amatic SC', cursive;
+  margin:0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 15vw;
+  margin: auto;
+  min-height: 15vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(252, 246, 243);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+ /* box-shadow: 0 0 7px #eee; */
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #3f5e42 0%, #468b4c 51%, #c08a48 100%);
 }

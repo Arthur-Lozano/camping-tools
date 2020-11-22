@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/item.css">
@@ -12,40 +13,58 @@
   <!-- <audio autoplay loop>
     <source src="audio/forest.wav" type="audio/wav">
 </audio> -->
-<h1>Camping List</h1>
-<header>
-  <nav>
-    <ul>
-      <li> <a href="index.html">Home</a></li>
-      <li> <a href="trip.html">Camper's Toolkit</a></li>
-      <li> <a href="about.html">About Us</a></li>
-      <li> <a href="spots.html">Camping Spots</a></li>
-    </ul>
-  </nav>
-</header>
+  <h1>Camping List</h1>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="item.html">Camper's Toolkit</a></li>
+        <li> <a href="about.html">About Us</a></li>
+        <li> <a href="spots.html">Camping Spots</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section>
-    <form id="campTime">
-      <fieldset>
-        <legend>Tell us what camping gear you have</legend><br>
-        <label for="itemOne">Item 1</label>
-        <input  name= "itemOne" type="text" required="required">
-        <label for="itemTwo">Item 2</label>
-        <input name= "itemTwo" type="text" required="required">
-        <label for="itemThree">Item 3</label>
-        <input name= "itemThree" type="text" required="required">
-        <label for="itemFour">Item 4</label>
-        <input name="itemFour" type="text" required="required">
-        <br >
-        <input type="reset" value="reset">
-      </fieldset>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-    <ol id="theList"> 
-    </ol>
+      <form id="campTime">
+        <fieldset>
+          <div id="formTitles">
+            <legend id="formTitle">Tell us what camping gear you have!</legend>
+            <br>
+            <p id= "subTitle1">Enter your <span class="green1">name</span> and select what type of <span class="green2">trip</span> you're taking</p>
+            <p id="subTitle2">Then, fill in the <span class="green3">four</span> items you plan to bring with you in the boxes
+              below</p>
+            <div id ="nameTrip">
+              <label for="name" id="camperNameText">Camper Name</label>
+              <input name="name" type="text" required="required" id="camperName">
+              <label for="trip" id="tripTypeText">What type of trip you will take?</label>
+              <select name="trip" id="tripType">
+                <option value="backPacking">Backpacking</option>
+                <option value="vehicleTrip">Vehicle</option>
+                <option value="cabinTrip">Cabin</option>
+              </select>
+            </div>
+          </div>
+          <div id="textFields">
+            <label for="itemOne" id="item1text">Item 1</label>
+            <input name="itemOne" type="text" required="required" id="item1">
+            <label for="itemTwo" id="item2text">Item 2</label>
+            <input name="itemTwo" type="text" required="required" id="item2">
+            <label for="itemThree" id="item3text">Item 3</label>
+            <input name="itemThree" type="text" required="required" id="item3">
+            <label for="itemFour" id="item4text">Item 4</label>
+            <input name="itemFour" type="text" required="required" id="item4">
+          </div>
+        </fieldset>
+
+        <div class="container">
+          <a href="results.html" class="btn btn-1">Submit</a>
+        </div>
+      </form>
+    </section>
   </main>
-<script src="js/app.js"></script>
-<footer></footer>
+  <script src="js/app.js"></script>
+  <footer></footer>
+
 </html>
