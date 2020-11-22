@@ -1,35 +1,30 @@
 'use strict';
 
-var recItems = [];
 var myForm = document.getElementById('campTime');
 var parentElement = document.getElementById('theList');
 var campingProducts = [];
-var userData = localStorage.getItem('userResults');
-
+var backPackingList = ['sleeping bag', 'tent', 'camp chairs', 'flashlight', 'batteries', 'firewood', 'water', 'food', 'pillow', 'thermos', 'cooking equipment', 'matches', 'air pump', 'clothes', 'boots', 'rain gear', 'toiletries', 'trash bags', 'cooler', 'laundry bag'];
+var vehicleList = ['surge protector', 'electrical adapters', 'toilet chemicals', 'leveling blocks', 'shovel', 'batteries', 'flashlight', 'jumper cables',
+  'fire extinguisher', 'motor oil', 'chocks', 'trash bags', 'food', 'bedding', 'pressure regulator', 'dishes', 'chargers'];
+var cabinList = ['shovel', 'charcoal', 'lighter fluid', 'grate', 'fire gloves', 'lighters', 'firewood', 'hammer', 'hatchet', 'tarps', 'chairs','pie iron', 'rope', 'clothes line' , 'stakes', 'coat', 'fuel', 'flashlights','first aid kit'];
 
 //Constructor function
-function Camping(itemOne, itemTwo, itemThree, itemFour) {
-  this.itemOne = itemOne;
-  this.itemTwo = itemTwo;
-  this.itemThree = itemThree;
-  this.itemFour = itemFour;
+function Camper(name, weHaveList, masterList) {
+  this.name = name;
+  this.weHaveList = weHaveList;
+  this.masterList = masterList;
+  // this.itemOne = itemOne;
+  // this.itemTwo = itemTwo;
+  // this.itemThree = itemThree;
+  // this.itemFour = itemFour;
   campingProducts.push(this);
 }
 
-Camping.prototype.render = function () { // generates a new list item for each item entered into text field
+Camper.prototype.render = function () { // generates a new list item for each item entered into text field
   //key+name = arrayName
-  for (var i = 0; i < campingProducts.length; i++) {
+  for (var i = 0; i < campingProducts[0].weHaveList.length; i++) {
     var li = document.createElement('li');
-    li.textContent = campingProducts[i].itemOne;
-    parentElement.appendChild(li);
-    li = document.createElement('li');
-    li.textContent = campingProducts[i].itemTwo;
-    parentElement.appendChild(li);
-    li = document.createElement('li');
-    li.textContent = campingProducts[i].itemThree;
-    parentElement.appendChild(li);
-    li = document.createElement('li');
-    li.textContent = campingProducts[i].itemFour;
+    li.textContent = campingProducts[0].weHaveList[i];
     parentElement.appendChild(li);
   }
 };
@@ -46,12 +41,26 @@ myForm.addEventListener('submit', formSubmit);
 function formSubmit(event) {
   event.preventDefault();
   var form = event.target;
+  var userName = form.name.value;
+  var tripType = form.trip.value;
   var itemOne = form.itemOne.value;
   var itemTwo = form.itemTwo.value;
   var itemThree = form.itemThree.value;
   var itemFour = form.itemFour.value;
+  var itemsArray = [itemOne, itemTwo, itemThree, itemFour];
+  if (tripType === 'backPacking') {
+    var masterList = [...backPackingList];
+  }
+  if (tripType === 'vehicleTrip') {
+    masterList = [...vehicleList];
+  }
+  if (tripType === 'cabinTrip') {
+    masterList = [...cabinList];
+  }
 
-  new Camping(itemOne, itemTwo, itemThree, itemFour);
+
+  console.log(masterList);
+  new Camper(userName, itemsArray, masterList);
   parentElement.innerHTML = '';
   renderAll();
 
