@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 .contentR img {
-  margin-right: 15px;
+  margin-right: 25px;
   float: left;
   width: 25%;
   height: 25%;
@@ -106,10 +106,10 @@ nav a:hover {
 }
 
 .contentA img {
-  margin-right: 15px;
+  margin-left: 25px;
   float: right;
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
 }
 
 .contentA h2{
@@ -123,7 +123,7 @@ nav a:hover {
 }
 
 .contentAspot:hover {
-  color: rgb(52, 214, 106);
+  color: #c08a48;
   transition: 350ms;
   cursor: pointer;
 }

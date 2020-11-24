@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="stylesheet" href="css/reset.css">
-  <title>Results</title>
+  <link rel="stylesheet" href="css/results.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <title>Results Page</title>
 </head>
 
 <body>
+  <!-- <audio autoplay loop>
+      <source src="audio/forest.wav" type="audio/wav">
+  </audio> -->
+  <h1>Camping List</h1>
   <header>
-    <nav id="aboutUs"> About Us</nav>
-    <nav id="campinglist"> Camping List</nav>
-    <nav id="home"> Home </nav>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="item.html">Camper's Toolkit</a></li>
+        <li> <a href="about.html">About Us</a></li>
+        <li> <a href="spots.html">Camping Spots</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <ul id="results">
-      
-    </ul>
 
-
-
+    <div class="container">
+      <h3 id="thank-you"> </h3>
+      <h6> Below you fill find your <span class="green">list</span> of provided items as well some items we <span class="green">recommend</span>, based on your planned <span class="green">trip</span>!
+      </h6>
+    </div>
+    <div>
+      <ul id="yourChoice"> The items you have:
+      </ul>
+      <ul id="ourChoice"> The items you should consider:
+      </ul>
+    </div>
   </main>
-
-
-</body>
-<footer></footer>
+  <script src="js/results.js"></script>
+  <footer></footer>
 
 </html>

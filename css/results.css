@@ -1,0 +1,120 @@
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(20, 20, 20) 35%, rgb(37, 37, 37) 100%);
+}
+
+/* Main Headline */
+h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 125px;
+  margin: 0 0 15px 0;
+  color: rgb(252, 246, 243);
+
+}
+
+/* Nav Bar */
+header nav {
+  margin: auto;
+  width: 500px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 37px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  display: inline-block;
+  font-size: 23px;
+  color: rgb(252, 246, 243);
+}
+
+nav a:hover {
+  color: rgb(52, 214, 106);
+  transition: 350ms;
+}
+main {
+  color: rgb(252, 246, 243);
+}
+
+#theList {
+  color: white;
+}
+
+#name-box #textFields {
+  margin-top: 15px;
+  padding: 40px 80px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 15px;
+}
+
+#thank-you  {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 75px;
+  color: rgb(252, 246, 243);
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  padding: 40px 80px;
+  border-radius: 5px;
+  margin: 50px 500px 10px 500px;
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  color: rgb(252, 246, 243);
+  margin: 25px 650px 15px 650px;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.green {
+  color: rgb(52, 214, 106);
+}
+
+#yourChoice {
+  margin-left: 600px;
+  margin-top: 25px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  padding: 25px 100px;
+  position: relative;
+  bottom: 315px;
+  color: rgb(52, 214, 106);
+}
+
+
+#ourChoice {
+  margin-left: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.15);
+  background-color: rgb(22, 22, 22);
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  padding: 40px 80px;
+  color: #c08a48;
+}
+
+
+
+
