@@ -7,7 +7,8 @@ var parsedGrabData = JSON.parse(grabData);
 var masterList = [...parsedGrabData[0].masterList];
 var weHaveList = [...parsedGrabData[0].weHaveList];
 
-
+var thankYou = document.getElementById('thank-you');
+thankYou.textContent = `Thank you for using our site ${parsedGrabData[0].name}`;
 console.log(parsedGrabData);
 
 function renderList() {

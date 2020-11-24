@@ -1,12 +1,12 @@
 'use strict';
 
 var myForm = document.getElementById('campTime');
-var parentElement = document.getElementById('theList');
+// var parentElement = document.getElementById('theList');
 var campingProducts = [];
 var backPackingList = ['sleeping bag', 'tent', 'camp chairs', 'flashlight', 'batteries', 'firewood', 'water', 'food', 'pillow', 'thermos', 'cooking equipment', 'matches', 'air pump', 'clothes', 'boots', 'rain gear', 'toiletries', 'trash bags', 'cooler', 'laundry bag'];
 var vehicleList = ['surge protector', 'electrical adapters', 'toilet chemicals', 'leveling blocks', 'shovel', 'batteries', 'flashlight', 'jumper cables',
   'fire extinguisher', 'motor oil', 'chocks', 'trash bags', 'food', 'bedding', 'pressure regulator', 'dishes', 'chargers'];
-var cabinList = ['shovel', 'charcoal', 'lighter fluid', 'grate', 'fire gloves', 'lighters', 'firewood', 'hammer', 'hatchet', 'tarps', 'chairs','pie iron', 'rope', 'clothes line' , 'stakes', 'coat', 'fuel', 'flashlights','first aid kit'];
+var cabinList = ['shovel', 'charcoal', 'lighter fluid', 'grate', 'fire gloves', 'lighters', 'firewood', 'hammer', 'hatchet', 'tarps', 'chairs', 'pie iron', 'rope', 'clothes line', 'stakes', 'coat', 'fuel', 'flashlights', 'first aid kit'];
 
 //Constructor function
 function Camper(name, weHaveList, masterList) {
@@ -19,6 +19,7 @@ function Camper(name, weHaveList, masterList) {
   // this.itemFour = itemFour;
   campingProducts.push(this);
 }
+console.log(campingProducts);
 
 Camper.prototype.render = function () { // generates a new list item for each item entered into text field
   //key+name = arrayName
@@ -37,7 +38,6 @@ function renderAll() {
 }
 
 // Below is the event handler
-myForm.addEventListener('submit', formSubmit);
 function formSubmit(event) {
   event.preventDefault();
   var form = event.target;
@@ -50,23 +50,19 @@ function formSubmit(event) {
   var itemsArray = [itemOne, itemTwo, itemThree, itemFour];
   if (tripType === 'backPacking') {
     var masterList = [...backPackingList];
-  }
-  if (tripType === 'vehicleTrip') {
+  } else if (tripType === 'vehicleTrip') {
     masterList = [...vehicleList];
-  }
-  if (tripType === 'cabinTrip') {
+  } else if (tripType === 'cabinTrip') {
     masterList = [...cabinList];
   }
 
-
-  console.log(masterList);
   new Camper(userName, itemsArray, masterList);
-  parentElement.innerHTML = '';
-  renderAll();
+  // parentElement.innerHTML = '';
 
   var stringifiedArray = JSON.stringify(campingProducts);
   localStorage.setItem('campingProducts', stringifiedArray);
 }
+myForm.addEventListener('submit', formSubmit);
 
 
 
