@@ -158,10 +158,10 @@ nav a:hover {
 }
 
 .contentAr img {
-  margin-right: 15px;
+  margin-right: 25px;
   float: left;
-  width: 25%;
-  height: 25%;
+  width: 550px;
+  height: 375px;
 }
 
 .contentAr h2{
