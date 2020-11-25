@@ -92,12 +92,13 @@ h5 {
 /* Bio Paragraph Text */
 p {
   font-size: 15px;
+  font-family: 'Staatliches', cursive;
 }
 
-/* Ryans Bio */
-#ryanT {
+/* Arthurs Bio */
+#arthurL {
   font-size: 50px;
-  margin-top: 45px;
+  margin-top: 50px;
   margin-left: 240px;
   padding: 40px 80px;
   display: inline-block;
@@ -106,6 +107,8 @@ p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
   text-align: center;
+  width:300px;
+  word-wrap: break-word;
 }
 
 /* Anthonys Bio */
@@ -120,12 +123,16 @@ p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
   text-align: center;
+  width:250px;
+  word-wrap: break-word;
+  position: relative;
+  bottom: 105px;
 }
 
-/* Arthurs Bio */
-#arthurL {
+/* Ryans Bio */
+#ryanT {
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 50px;
   padding: 40px 80px;
   display: inline-block;
@@ -134,7 +141,13 @@ p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   font-family: 'Staatliches', cursive;
   text-align: center;
+  width:300px;
+  word-wrap: break-word;
+  position: relative;
+  bottom: 105px;
 }
+
+
 
 
 
