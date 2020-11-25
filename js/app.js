@@ -61,6 +61,8 @@ function formSubmit(event) {
 
   var stringifiedArray = JSON.stringify(campingProducts);
   localStorage.setItem('campingProducts', stringifiedArray);
+
+  window.location.replace('/results.html');
 }
 myForm.addEventListener('submit', formSubmit);
 
