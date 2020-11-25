@@ -95,10 +95,17 @@ p {
   font-family: 'Staatliches', cursive;
 }
 
+/* Arthurs Img */
+.arthurImg {
+  width: 60%;
+  height: 60%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
 /* Arthurs Bio */
 #arthurL {
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 240px;
   padding: 40px 80px;
   display: inline-block;
@@ -111,10 +118,25 @@ p {
   word-wrap: break-word;
 }
 
+#arthurText {
+  box-shadow: 0 0 15px rgba(62, 192, 22, 0.514);
+  font-family: 'Staatliches', cursive;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 15px 15px;
+  margin-top: 10px;
+}
+
+/* Anthonys Img */
+.anthonyImg {
+  width: 75%;
+  height: 75%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
 /* Anthonys Bio */
 #anthonyO{
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 50px;
   padding: 40px 80px;
   display: inline-block;
@@ -125,14 +147,27 @@ p {
   text-align: center;
   width:250px;
   word-wrap: break-word;
-  position: relative;
-  bottom: 105px;
+}
+
+#anthonyText {
+  box-shadow: 0 0 15px rgba(62, 192, 22, 0.514);
+  font-family: 'Staatliches', cursive;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 15px 15px;
+  margin-top: 10px;
+}
+
+/* Ryans Img */
+.ryanImg {
+  width: 75%;
+  height: 75%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Ryans Bio */
 #ryanT {
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 50px;
   padding: 40px 80px;
   display: inline-block;
@@ -143,8 +178,16 @@ p {
   text-align: center;
   width:300px;
   word-wrap: break-word;
-  position: relative;
-  bottom: 105px;
+}
+
+#ryanText {
+  box-shadow: 0 0 15px rgba(62, 192, 22, 0.514);
+  font-family: 'Staatliches', cursive;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 15px 15px;
+  text-align: center;
+  margin: 10px 0 0 20px;
+
 }
 
 
